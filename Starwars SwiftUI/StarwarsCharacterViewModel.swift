@@ -10,7 +10,7 @@ import Alamofire
 
 class StarwarsCharacterViewModel: ObservableObject{
 
-    private var basePeopleUrl = "https://swapi.dev/api/people/"
+    private let basePeopleUrl = "https://swapi.dev/api/people/"
     
     @Published var character: StarwarsCharacter? = nil
     @Published var errorOccurred = false
