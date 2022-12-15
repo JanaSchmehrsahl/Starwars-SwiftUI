@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30DB5DA2D51B8026C3968EE7 /* Pods_Starwars_SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F84C9F3D6ABA4F57B59A125 /* Pods_Starwars_SwiftUI.framework */; };
+		9D4903FD29487F5800F03E41 /* StarwarsCharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4903FC29487F5800F03E41 /* StarwarsCharacterViewModel.swift */; };
 		9D9BF014294861C800EA1D96 /* Starwars_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9BF013294861C800EA1D96 /* Starwars_SwiftUIApp.swift */; };
-		9D9BF016294861C800EA1D96 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9BF015294861C800EA1D96 /* ContentView.swift */; };
+		9D9BF016294861C800EA1D96 /* StarwarsCharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9BF015294861C800EA1D96 /* StarwarsCharacterView.swift */; };
 		9D9BF018294861C900EA1D96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D9BF017294861C900EA1D96 /* Assets.xcassets */; };
 		9D9BF01B294861C900EA1D96 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D9BF01A294861C900EA1D96 /* Preview Assets.xcassets */; };
+		9DC949F52948801F001478E2 /* StarwarsCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC949F42948801F001478E2 /* StarwarsCharacter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6D570FCCF0E7739957B11850 /* Pods-Starwars SwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Starwars SwiftUI.release.xcconfig"; path = "Target Support Files/Pods-Starwars SwiftUI/Pods-Starwars SwiftUI.release.xcconfig"; sourceTree = "<group>"; };
+		7F84C9F3D6ABA4F57B59A125 /* Pods_Starwars_SwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Starwars_SwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D4903FC29487F5800F03E41 /* StarwarsCharacterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarwarsCharacterViewModel.swift; sourceTree = "<group>"; };
 		9D9BF010294861C800EA1D96 /* Starwars SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Starwars SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D9BF013294861C800EA1D96 /* Starwars_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Starwars_SwiftUIApp.swift; sourceTree = "<group>"; };
-		9D9BF015294861C800EA1D96 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9D9BF015294861C800EA1D96 /* StarwarsCharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarwarsCharacterView.swift; sourceTree = "<group>"; };
 		9D9BF017294861C900EA1D96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D9BF01A294861C900EA1D96 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9DC949F42948801F001478E2 /* StarwarsCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarwarsCharacter.swift; sourceTree = "<group>"; };
+		DB0DF6988B22AEA64CBAAD1A /* Pods-Starwars SwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Starwars SwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-Starwars SwiftUI/Pods-Starwars SwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +34,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30DB5DA2D51B8026C3968EE7 /* Pods_Starwars_SwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26322154DE1CBD4F6F22F438 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB0DF6988B22AEA64CBAAD1A /* Pods-Starwars SwiftUI.debug.xcconfig */,
+				6D570FCCF0E7739957B11850 /* Pods-Starwars SwiftUI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9D9BF007294861C800EA1D96 = {
 			isa = PBXGroup;
 			children = (
 				9D9BF012294861C800EA1D96 /* Starwars SwiftUI */,
 				9D9BF011294861C800EA1D96 /* Products */,
+				26322154DE1CBD4F6F22F438 /* Pods */,
+				FD8DC201AD87E7097633407F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,8 +71,10 @@
 		9D9BF012294861C800EA1D96 /* Starwars SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				9DC949F329487FCD001478E2 /* Model */,
+				9D4903FC29487F5800F03E41 /* StarwarsCharacterViewModel.swift */,
 				9D9BF013294861C800EA1D96 /* Starwars_SwiftUIApp.swift */,
-				9D9BF015294861C800EA1D96 /* ContentView.swift */,
+				9D9BF015294861C800EA1D96 /* StarwarsCharacterView.swift */,
 				9D9BF017294861C900EA1D96 /* Assets.xcassets */,
 				9D9BF019294861C900EA1D96 /* Preview Content */,
 			);
@@ -67,6 +89,22 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		9DC949F329487FCD001478E2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9DC949F42948801F001478E2 /* StarwarsCharacter.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FD8DC201AD87E7097633407F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F84C9F3D6ABA4F57B59A125 /* Pods_Starwars_SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +112,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D9BF01E294861C900EA1D96 /* Build configuration list for PBXNativeTarget "Starwars SwiftUI" */;
 			buildPhases = (
+				29373A14664CE78660BC89C7 /* [CP] Check Pods Manifest.lock */,
 				9D9BF00C294861C800EA1D96 /* Sources */,
 				9D9BF00D294861C800EA1D96 /* Frameworks */,
 				9D9BF00E294861C800EA1D96 /* Resources */,
+				CDA2D043747E435B28FB05FF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,12 +172,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		29373A14664CE78660BC89C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Starwars SwiftUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDA2D043747E435B28FB05FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Starwars SwiftUI/Pods-Starwars SwiftUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Starwars SwiftUI/Pods-Starwars SwiftUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Starwars SwiftUI/Pods-Starwars SwiftUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9D9BF00C294861C800EA1D96 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D9BF016294861C800EA1D96 /* ContentView.swift in Sources */,
+				9D9BF016294861C800EA1D96 /* StarwarsCharacterView.swift in Sources */,
+				9D4903FD29487F5800F03E41 /* StarwarsCharacterViewModel.swift in Sources */,
+				9DC949F52948801F001478E2 /* StarwarsCharacter.swift in Sources */,
 				9D9BF014294861C800EA1D96 /* Starwars_SwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +345,7 @@
 		};
 		9D9BF01F294861C900EA1D96 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB0DF6988B22AEA64CBAAD1A /* Pods-Starwars SwiftUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -290,6 +375,7 @@
 		};
 		9D9BF020294861C900EA1D96 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D570FCCF0E7739957B11850 /* Pods-Starwars SwiftUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
